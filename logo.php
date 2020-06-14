@@ -4,7 +4,7 @@
 /*
 Plugin Name: WP Custom login logo
 
-Version: 1.3
+Version: 1.4
 
 Plugin URI: http://ewebdesigns.com.au
 

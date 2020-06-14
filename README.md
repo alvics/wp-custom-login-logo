@@ -7,6 +7,7 @@
 <p>WordPress uses CSS to display a background image the WordPress logo in the link inside the heading tag You can use the login_enqueue_scripts hook to insert CSS into the head of the login page so your logo loads instead:</p>
 
 before:
+
 ![image](/assets/wp-admin-page.png)
 
 ### How to use
@@ -69,4 +70,5 @@ add_action('login_enqueue_scripts', 'my_login_logo');
 ```
 
 after:
+
 ![image](assets/new-admin-page.png)
