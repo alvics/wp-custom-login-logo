@@ -4,7 +4,7 @@
 /*
 Plugin Name: WP Custom login logo
 
-Version: 1.4
+Version: 1.5
 
 Plugin URI: http://ewebdesigns.com.au
 
@@ -31,6 +31,11 @@ function my_login_logo()
     $image = wp_get_attachment_image_src($custom_logo_id, 'full'); ?>
 
     <style type="text/css">
+        .login-action-login {
+            background: #fff !important;
+
+        }
+
         #login h1 a,
         .login h1 a {
             height: 185px;
@@ -42,18 +47,18 @@ function my_login_logo()
         }
 
         .login form {
-            background: #f1f1f1;
+            background: #f1f1f1 !important;
             border: 1px solid #eee;
             -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
-                0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
             box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-                0 1px 10px 0 rgba(0, 0, 0, 0.12);
+                0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
         }
 
 
         .wp-core-ui .button,
         .wp-core-ui .button.button-large {
-            padding: 0 34px;
+            padding: 0 34px !important;
             background-color: #333;
             border-radius: 40px;
             border: none;
