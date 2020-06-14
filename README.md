@@ -22,26 +22,6 @@ before:
 ```javascript
 <?php
 
-
-/*
-Plugin Name: WP Custom login logo
-
-Version: 1.6
-
-Plugin URI: http://ewebdesigns.com.au
-
-Description: Simply adds your logo to the WordPress admin login page. (Replaces the default WordPress logo).
-steps.
-1. Add your logo to WordPress as you normally would through Appearance>Customize.
-2. Install this plugin
-
-Author: Allen Pavic
-
-Author URI: http://allenpavic.ga
-
-License: GPLv2 or later
-
-*/
 // Custom logo support for admin login page
 add_theme_support('custom-logo');
 
