@@ -33,12 +33,35 @@ function my_login_logo()
     <style type="text/css">
         #login h1 a,
         .login h1 a {
-            background-image: url(<?php echo $image[0]; ?>);
-            height: 65px;
+            height: 185px;
             width: auto;
-            background-size: contain;
-            background-repeat: no-repeat;
             padding-bottom: 30px;
+            background-image: url(<?php echo $image[0]; ?>);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .login form {
+            background: #f1f1f1;
+            border: 1px solid #eee;
+            -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+                0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+                0 1px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+
+        .wp-core-ui .button,
+        .wp-core-ui .button.button-large {
+            padding: 0 34px;
+            background-color: #333;
+            border-radius: 40px;
+            border: none;
+        }
+
+        .wp-core-ui .button,
+        .wp-core-ui .button.button-large:hover {
+            opacity: 0.8;
         }
     </style>
 <?php }
