@@ -4,7 +4,7 @@
 /*
 Plugin Name: WP Custom login logo
 
-Version: 1.5
+Version: 1.6
 
 Plugin URI: http://ewebdesigns.com.au
 
@@ -30,10 +30,23 @@ function my_login_logo()
     $custom_logo_id = get_theme_mod('custom_logo');
     $image = wp_get_attachment_image_src($custom_logo_id, 'full'); ?>
 
+    <h1 id="welcome-login">Welcome to <?php bloginfo('name'); ?></h1>
+
     <style type="text/css">
         .login-action-login {
             background: #fff !important;
+        }
 
+        .wp-core-ui #login {
+            padding: 0 !important;
+        }
+
+        #welcome-login {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            font-size: 24px !important;
+            padding-top: 50px;
         }
 
         #login h1 a,
@@ -55,7 +68,6 @@ function my_login_logo()
                 0 1px 10px 0 rgba(0, 0, 0, 0.12) !important;
         }
 
-
         .wp-core-ui .button,
         .wp-core-ui .button.button-large {
             padding: 0 34px !important;
@@ -64,10 +76,11 @@ function my_login_logo()
             border: none;
         }
 
-        .wp-core-ui .button,
-        .wp-core-ui .button.button-large:hover {
-            opacity: 0.8;
+        .wp-core-ui .button-primary:hover {
+            background-color: #333 !important;
+            opacity: 0.8 !important;
         }
     </style>
+
 <?php }
 add_action('login_enqueue_scripts', 'my_login_logo');

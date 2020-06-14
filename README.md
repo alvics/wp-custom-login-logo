@@ -71,4 +71,6 @@ add_action('login_enqueue_scripts', 'my_login_logo');
 
 after:
 
+Adds new welcome greeting (from site name), and new styles
+
 ![image](assets/new-admin-page.png)
