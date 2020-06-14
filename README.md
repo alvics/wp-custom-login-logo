@@ -73,4 +73,4 @@ after:
 
 Adds new welcome greeting (from site name), and new styles
 
-![image](assets/new-admin-page.png)
+![image](assets/wp-new-admin-page.png)
